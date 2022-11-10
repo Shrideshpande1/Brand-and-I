@@ -18,7 +18,7 @@ setSlelectImg(selectImg=>selectImg<3? selectImg+1:0)
 
 return(
     <div>
-        <img style={{ width:"1000px",height:"400px",alignItems:"right"}}  src={allImg[selectImg]} alt="nahai"  />
+        <img style={{ width:"600px",height:"450px",alignItems:"right"}}  src={allImg[selectImg]} alt="nahai"  />
       
       
     </div>

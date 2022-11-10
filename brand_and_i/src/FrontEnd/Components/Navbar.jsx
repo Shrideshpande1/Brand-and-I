@@ -35,6 +35,9 @@ function Navbar(){
   templateRows='repeat(2, 1fr)'
   templateColumns='repeat(7, 1fr)'
   gap={1}
+color="white"
+backgroundColor="
+#1779fd"
 >
   <GridItem rowSpan={2} colSpan={1} >
   <Box boxSize='sm' style={{marginTop:"30px" , width:"250px"}}>
@@ -103,11 +106,11 @@ function Navbar(){
   
   <WrapItem>
     <Avatar style={{width:"20px",height:"20px" ,marginTop:"5px",radious:"none",marginRight:"8px",marginLeft:"5px" }}  name='Kola Tioluwani' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAY1BMVEUAAAD///9paWn09PRAQEDf39+srKz4+Pjj4+O1tbXPz89+fn6ysrKNjY3Y2Ng3NzdOTk5wcHDBwcEpKSmkpKRiYmLp6elTU1MRERHHx8cKCgqZmZl2dnYeHh5GRkZZWVkwMDAHWC4LAAADCElEQVRoge3b23aiMBQG4ETOooAoVFTU93/KAc9jc/h3DKGd4e9Fb7r6LSDAzg5h/J44Wc4GThpmD47dfpc5c5I2jF7h+MsN2yefP+H51p3bJbzDc6fsTe7g2O3x9mkusMPre08bdXDp3mVs2cGO7qO3cBaP4rKSJePAy+5nlBRsNg68HQtmEzzBE3zLudo0WRBkTTjz3cG7WePxZ7K0dQOnNX+Lt3cAt9k7e6Hp1QQRXonYPuSDpsF7mcvJlQwJVrhkmQKnKpfzzVBwEalhfhgIFo7n19TrQWDNie6zGAT+9twQhFArwzBwwJyHA8DaK9wnsg9vEZdz/Mqhf3nAYPxeRuENBuNzbRRuMBi/yCgcYDC3Dnt68x+D47HgOebaH1whBgfW4SUG4+8nFM4xOLUOQ29FwtjCYWWhd08zANzqKq4+1QAw8pqgtGNxuNVfZcpEhlBlal/JpMKaUtBrHiK0vjdpCqN8bsaUqpo6aVPIpGqeDLNE5uIPaTNYVl7TJmwmMFuXgmFl0IExaL74yV93dNSc6P/DsN20rhZB7UWRVwflwXBtwbjB1vpF4RNHshX400zwBE/wBP8/cHusuhTmD2syXKT7MniZpkdxs0kNXowUOF/tM0lnIArCw3EQeHuSos9jDyv81EPw7muBTRZ5XVbgYhAAn/dor+lqL6BzroWPguJOlzlwOJo/OYJNl2+HvfoIzsFGoiix5hZTwWDjVJZSOczkcIH21KTxVOdbCqdI60EXxcxGBoN9LV3kfS8JDC19IJEuj4jhky2Xc9k3PUJ4hzaJkUieY0J4YdHlGQ7nNgb0M+Kumwi2NrKuEX8yJoINXguqiNsjIhhazcNTn1GY9PrVxxN2SCZ4gp3CWeTZTA3DvuUIv6P+dbPFCZ7gnwrvGL7uajU+I3wWZDMpk9SAQydh3Ogz0o/jMconWPay6rekjLFDo+5h55t/LjP+ftuR85PdTxguG60cy5eJynVrWfPBwhU5187KbTNd5GxnyurWImSPkqxcFgNv9doe0+Qx8f4DIfwhlUFobvUAAAAASUVORK5CYII=' />
-    <NavLink to={"/SignIn"}>
+    <NavLink to={"/Login"}>
     <p style={{fontSize:"20px"}}>Sign In</p>
     </NavLink>
   </WrapItem>
-  
+  {/* Home */}
   <WrapItem display={"flex"}>
     <Avatar style={{width:"20px",height:"20px" ,marginTop:"5px",radious:"none",marginRight:"8px",marginLeft:"5px" }}  name='Kola Tioluwani' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAAAwMDD8/PzBwcHZ2dnHx8e0tLRBQUH39/efn59UVFTz8/Ps7OzT09NFRUVbW1s2Njbl5eVMTExubm5paWlhYWEPDw/Nzc2Hh4eZmZmwsLAbGxuTk5N1dXUVFRUmJiaAgIA7Ozunp6ff398q6Ej8AAAE+ElEQVR4nO2da1viMBBGbbmUewUUBFRE/P+/cdfFVbS0nUxmMsPuez7XNOexIWkyM725AQAAAAAAAAAAAAAAAAAAuDoeRndlmdszKO9HfXm92V3mi5WsZG9lLXSB8UxO8GAtU8NdR8ZvUlqb1DKfSgi+ra09mhB4UieuBbMs/r/o9xE9MY8di8/WBq3cxwn2rPtPIG4o3lp3n8AyRvDBuvckuhGG99adJzGOMLTuO5EhW7Bv3XUi/Md0a911Ihu24XUMw5iB6H0985c523Bu3XUiOdswt+46ERjC0D8whKF/YAhD/8AQhv6BIQz9A0MY+geGMPQPDGHoHxhqGL7ebrZF97jdjNvayMeb7bFbbDe3r+y7pTZcH/qLrzY6i6I+6O9+tzgLFln0D49XYDjoVk9kh8WlM578eOHK/ti5YflQ09Rs8OPKeV30ZC/cMZ3hetfQWPHtCaRf6cmwbI4xm3yNx1XLlUufhs+t7e0+rhy1XrnxaPhEaPAUgUQJnRj5M6QInuLkaHFoIYpJDO+ITfayul/bnwQ8qCkM6VGe9HBQ+s9NCsM39j3qmZKjkxMY0gZhKEdHhoJa57y4MSwErc7pejF8FErsqPJzMWtlqDMK3yGORHVDjR/SE1MfhlGR5C3QIum1Dfnxq+3Q1m7ahgrZjp/MXBgu2htiM/RguBYUqkJ63Vc25DdPgbT8VjYsBX2qkNJzlQ1vBX2qkHLnrtrw4MBQc8L38ZTykx0okLaHlQ0fBX2qkFI+tGf8iaBQBdJOhrahYGmDCm+kHmgbar3hv0PLD9Q2pG6VcqBtmmob5vwUzlZo2XNX/I6/oHVA3VDvFZh4eHHFe23E4AX9/dKYhPgmaG/4KQy1lqbUykYJdvV1Jn3adJ/GMKaqQT3k4lQpTtc0RiJ1FKYxfFGY9YmHFokMFc4uyKeHqSIVpHdNiUcWCQ2lX/VDgoYSxdPIrt0cxtNk5DASCmH1qVIZ7kUK4P1hGHbndJF7YoaBBbjSRV8ehARDK/8kjKBtihqlQw3BsDAUOS0Nr4KXNM47fkcjZKq3MFzH/qAOqYFQVoaxO28dTm2qxPkWg6hdG04yQvKMkpg9DV5F5uRZQfw3fmZJ7fR5Tyvm/bjlYA0yu3iK7KLoFrlrHEV+1XeT/MNwxYiKxTYZlqEhGjElmY1ySJdB82JU4X6rLNkyYHXDmujNDbMBVbETmKvmxjDLacvwIX3v15thtqfsok4ZbxNuDLN1r/Umi2hB43z8toO33j7+HsYVB5qPpUSqvlvXVGiKKAredLqItWFD2u+u/Y8pmBvWHmkEHU40YG9YExgWlrDdgAPDbHVhkSr3+RMPhtmysoIT/DiIC8Ms/x5oO+TXarnQtgvDbH++HT4VbdqJ4fny5o1Xh6YON4afp8TSXyDyY/ixghP/9Ikjw+z4u9VCvFVPhtmT2ELmDFeGmcZ3T3wZagBDGPoHhjD0Dwxh6B8YwtA/MIShf2D4Pxv++98hjY2RSAU/5yoqUCkh/JjdJ+uuE+FnssicsuvDrz1CqwdnT0QGRFxAXSpe+YJX8phGFci5hm+Px+Xnih+EKRBZC8D/lBhbz4GTaJWUfXSpMWKZHzPawztb8T0URQpyCIS4arEX+A++M/T6c7OUK/fX9/gelcuWjOl6c8zlS/1Ni8My90H5XGgWoAYAAAAAAAAAAAAAAAAAANDhF5DDcq0XeedAAAAAAElFTkSuQmCC' />
     <p style={{fontSize:"20px"}}>Favorate</p>

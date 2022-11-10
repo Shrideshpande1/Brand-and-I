@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import { GetData ,DeleteData,PutData} from "./Product_API";
 import { Box, Image ,Grid,GridItem,Text} from "@chakra-ui/react";
 import PutTodo from "./AddProduct";
-const Product = () => {
+const Best_Seller = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const[loading,setLoading]=useState(false)
 
   const fetchData = (page) => {
     setLoading(true)
-    GetData({  page, limit: 25, order: "desc",sort:"name" })
+    GetData({  page, limit: 5, order: "desc",sort:"name" })
       .then((res) => {
         console.log(res.data);
         setData(res.data);
@@ -94,4 +94,5 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Best_Seller;
+

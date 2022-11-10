@@ -6,7 +6,7 @@ import { Flex} from '@chakra-ui/react'
 const Links=[
 
     {path:"/New",title:"New"},
-    {path:"/",title:"Home"},
+    // {path:"/",title:"Home"},
     {path:"/BestSeller",title:"BestSeller"},
     {path:"/Brand",title:"Brand"},
     {path:"/Clearance",title:"Clearance"},
@@ -19,7 +19,8 @@ const Links=[
 
 
 const SetRoutes = () => {
-  return  <Flex justifyContent={"space-around"}>{Links.map((link)=>(
+  return  <Flex backgroundColor={
+    "#1779fd"} color="white" justifyContent={"space-around"}>{Links.map((link)=>(
     <NavLink key={link.path} to={link.path}>
       {link.title}
 

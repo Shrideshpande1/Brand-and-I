@@ -1,20 +1,23 @@
 import React from 'react'
-// import Navbar from '../Components/Navbar'
-import AllRoutes from '../Routes/AllRoutes'
-import SetRoutes from '../Routes/SetRoutes'
-import Navbar from '../Components/Navbar'
+import { Box} from '@chakra-ui/react'
+import First_Product_Slier from '../Components/First_Product_Slier'
+import Product from '../../BackEnd/Product'
 import Footer from '../Components/Footer'
-import Slider from '../Components/Slider'
+import Slider1 from '../Components/Popular_Brands'
+import Best_Seller from '../../BackEnd/Best_Seller'
+import Collection from '../Components/Collection'
 const Home = () => {
   return (
-    <div>
-   
-       <Navbar/>
-       <Slider/>
+   <Box>
+
+<First_Product_Slier/>
+{/* <Collection/> */}
+<Best_Seller/>
+<Slider1/>
+<Product/>
       <Footer/>
-       
-      
-    </div>
+
+   </Box>
   )
 }
 
