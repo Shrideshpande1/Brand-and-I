@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { GetData ,DeleteData,PutData} from "./Product_API";
+import { Link } from "react-router-dom";
 import { Box, Image ,Grid,GridItem,Text} from "@chakra-ui/react";
 import PutTodo from "./AddProduct";
 const Product = () => {
@@ -57,7 +58,10 @@ const Product = () => {
 
 
     <Grid templateColumns={{base:"repeat(5,1fr)"}} gap={10}>
-    {data.map((ele)=><GridItem key={ele.id}>
+    {data.map((ele)=>
+    <Link to={`/Product_info/${ele.id}`}>
+      
+    <GridItem key={ele.id}>
       <Box
      bg="gray.50"
    
@@ -76,7 +80,11 @@ const Product = () => {
         <button onClick={()=>handledelete(ele.id)}>Delete</button>
       </Box>
       
-</GridItem>)}
+</GridItem>
+{/* console.log(ele.id) */}
+
+
+</Link>)}
   </Grid>
 
   <div>

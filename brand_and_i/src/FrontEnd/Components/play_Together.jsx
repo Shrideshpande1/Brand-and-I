@@ -31,7 +31,7 @@ const play=[{
   <p style={{textAlign:"left", fontSize:"19px"}}> 
 
 Let's play together</p>
-  <Grid templateColumns={{base:"repeat(2,1fr)"}} Gap={10}>
+  <Grid templateColumns={{base:"repeat(2,1fr)"}} gap={10}>
     {play.map((item)=><GridItem key={item.id}>
       <Box
     bg="gray.50"

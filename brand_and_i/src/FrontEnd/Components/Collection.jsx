@@ -29,7 +29,7 @@ const health=[{
  
   return <>
   <p style={{textAlign:"left", fontSize:"19px"}}> Go outside for fun and health</p>
-  <Grid templateColumns={{base:"repeat(2,1fr)"}} Gap={10}>
+  <Grid templateColumns={{base:"repeat(2,1fr)"}} gap={10}>
     {health.map((item)=><GridItem key={item.id}>
       <Box
     bg="gray.50"

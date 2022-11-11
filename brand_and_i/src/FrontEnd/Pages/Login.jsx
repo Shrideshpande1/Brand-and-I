@@ -33,7 +33,7 @@ function Login() {
     <div className="login-page" style={{
       border: "1px solid #7b7b7b",
     margin:"auto",
-      width: "550px",
+      width: "400px",
       marginTop:"50px",
       textAlign:"left",
       padding:"20px"
@@ -47,10 +47,10 @@ function Login() {
               style={{
                 border: "1px solid #7b7b7b",
                 margin: "auto",
-                width: "450px",
+                width: "350px",
                 marginTop: "10px",
                 textAlign: "left",
-                padding: "20px",
+             
               }}
               value={email}
               type="email"
@@ -65,10 +65,10 @@ function Login() {
               style={{
                 border: "1px solid #7b7b7b",
                 margin: "auto",
-                width: "450px",
+                width: "350px",
                 marginTop: "10px",
                 textAlign: "left",
-                padding: "20px",
+              
               }}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -84,8 +84,8 @@ function Login() {
               margin: "auto",
               width: "250px",
               marginTop: "10px",
-              
-              padding: "20px",
+              backgroundColor:"yellow"
+           
             }}
             disabled={loading ? true : false}
             type="submit"
