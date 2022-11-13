@@ -12,8 +12,8 @@ const Links=[
     {path:"/Clearance",title:"Clearance"},
     {path:"/Deals",title:"Deals"},
     {path:"/Coupon",title:"Coupon"},
-    {path:"/AppOnly",title:"App_Only"},
-    {path:"/BackEndData",title:"BackEndData"},
+    {path:"/AppOnly",title:"App Only"},
+
    
 ]
 

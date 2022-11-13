@@ -17,8 +17,9 @@ setSlelectImg(selectImg=>selectImg<2? selectImg+1:0)
     },[])
 
 return(
-    <div>
-        <img style={{ width:"95%",height:"250px",alignItems:"right",margin:"auto"}}  src={allImg[selectImg]} alt="nahai"  />
+    <div style={{}}>
+        <h1 style={{textAlign:"left",fontWeight:'bold',fontSize:"22px", width:"95%",margin:"auto",marginBottom:'10px'}}>Popular Brands</h1>
+        <img style={{ width:"95%",height:"250px",margin:"auto"}}  src={allImg[selectImg]} alt="nahai"  />
       
       
     </div>

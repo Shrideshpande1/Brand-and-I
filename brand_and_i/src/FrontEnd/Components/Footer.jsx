@@ -8,7 +8,7 @@ import { Button, Grid, GridItem, Popover, PopoverArrow, PopoverBody, PopoverClos
 import { Avatar, AvatarBadge, AvatarGroup,PhoneIcon,ArrowDownIcon} from '@chakra-ui/react'
 import { Select } from '@chakra-ui/react'
 import { Input } from '@chakra-ui/react'
-
+import Logo from "../Images/Logo.jpeg";
 
 
 
@@ -21,9 +21,9 @@ function Footer(){
  
     return(
         <>
-        <>
+      <Box style={{marginLeft:"300px"}}>
         <Box style={{width:"90%",display:"flex" ,margin:"auto",marginTop:"50px"}}>
-    <p >Popular Searches:</p>
+    <p style={{fontWeight:"bold"}}>Popular Searches :</p>
     <p style={{marginLeft:"10px" }}>realme buds q</p>
     <p style={{marginLeft:"10px"}}>xiaomi redmi 7 case</p>
     <p style={{marginLeft:"10px"}}>lenovo Ip1s tws</p>
@@ -43,8 +43,8 @@ function Footer(){
     
     </Box>
  
-
-        </>
+    </Box>
+     
 
 
 
@@ -52,7 +52,7 @@ function Footer(){
 <Grid style={{width:"90%",margin:"auto",marginBottom:"100px",marginTop:'70px'}} templateColumns='repeat(5, 1fr)' gap={6}>
   <GridItem w='100%' h='10' bg='' >
   <Box boxSize='sm' style={{marginTop:"5px" , width:"160px"}}>
-  <Image  style={{width:"300px",margin:"5px"}} src='https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png' alt='Dan Abramov' />
+  <Image style={{ width: "50px",height:'50px',marginLeft:"50px" }} src={Logo} alt="Dan Abramov" />
   <p style={{fontSize:"18px"}}>Affordable quality fun shopping</p>
 </Box>
   </GridItem>
@@ -137,7 +137,7 @@ function Footer(){
   </WrapItem>
 </Wrap>
   </GridItem>
-  
+  {/* //Affordable quality */}
 </Grid>
 
 <Grid templateColumns='repeat(4, 1fr)' gap={6} style={{marginTop:"10px",}}>

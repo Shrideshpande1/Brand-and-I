@@ -28,7 +28,7 @@ const solution=[{
 
  
   return <>
-  <p style={{textAlign:"left", fontSize:"19px"}}> Unleash maximum productivity</p>
+  <p style={{textAlign:"left", fontSize:"19px", fontSize:"22px",fontWeight:"bold"}}> Unleash maximum productivity</p>
   <Grid templateColumns={{base:"repeat(2,1fr)"}} Gap={10}>
     {solution.map((item)=><GridItem key={item.id}>
       <Box
@@ -42,7 +42,7 @@ const solution=[{
     boxShadow='lg'
     margin={"10px"}
       >
-        <Image style={{width:"150px",height:"150px"}} boxsize="ls" src={item.img}/>
+        <Image style={{width:"150px",height:"150px",margin:'auto'}} boxsize="ls" src={item.img}/>
         <Box noOfLines={2} textAlign="left">{item.title}</Box>
        
     

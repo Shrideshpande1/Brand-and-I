@@ -13,6 +13,7 @@ import Login from '../Pages/Login'
 import PrivateRoute from '../Components/PrivateRoute'
 import Product_info from '../Pages/Product_info'
 // import Cart from "../Pages/Cart"
+import CartProduct from '../Pages/CartProduct'
 import Buy_now from '../Pages/Buy_now'
 const AllRoutes = () => {
   return (
@@ -29,6 +30,7 @@ const AllRoutes = () => {
         <Route path="/New" element={<PrivateRoute><New/></PrivateRoute>}></Route>
         <Route path="/Login" element={<Login/>}></Route>
         <Route path="/Buy_now" element={<Buy_now/>}></Route>
+        <Route path="/CartProduct" element={<CartProduct/>}></Route>
         {/* <Route path="/Cart" element={<Cart/>}></Route> */}
         <Route path="/Product_info/:id" element={<Product_info/>}></Route>
        

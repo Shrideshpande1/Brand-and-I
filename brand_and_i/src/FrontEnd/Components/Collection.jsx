@@ -28,7 +28,7 @@ const health=[{
 
  
   return <>
-  <p style={{textAlign:"left", fontSize:"19px"}}> Go outside for fun and health</p>
+  <p style={{textAlign:"left", fontSize:"22px",fontWeight:"bold"}}> Go outside for fun and health</p>
   <Grid templateColumns={{base:"repeat(2,1fr)"}} gap={10}>
     {health.map((item)=><GridItem key={item.id}>
       <Box
@@ -42,8 +42,8 @@ const health=[{
     boxShadow='lg'
     margin={"10px"}
       >
-        <Image style={{width:"150px",height:"150px"}} boxsize="ls" src={item.img}/>
-        <Box noOfLines={2} textAlign="left">{item.title}</Box>
+        <Image style={{width:"150px",height:"150px",margin:"auto"}} boxsize="ls" src={item.img}/>
+        <Box noOfLines={2} textAlign="left" >{item.title}</Box>
        
     
       </Box>
