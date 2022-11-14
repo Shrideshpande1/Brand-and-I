@@ -14,6 +14,10 @@ return axios.get(`https://636b5abead62451f9faf3ad2.mockapi.io/products?sortBy=na
 export const DeleteData=(id)=>{
     return  axios.delete(`https://636b5abead62451f9faf3ad2.mockapi.io/products/${id}`)
  }
+export const DeleteCart=(id)=>{
+    console.log(id)
+    return  axios.delete(`https://636b5abead62451f9faf3ad2.mockapi.io/cart/${id}`).then((res)=>console.log(res.data))
+ }
 
   
 export const PutData=(data = {})=>{

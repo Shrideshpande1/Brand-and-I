@@ -340,7 +340,7 @@ const Buy_now = () => {
             width: "500px",
             height: "30px",
             backgroundColor:"yellow"
-          }} onClick={alert("hi")}>Confirm</button>
+          }} onClick={alert("Your order has successfully placed! Thank you for shopping with us!")}>Confirm</button>
        </Link>
       </form>
   

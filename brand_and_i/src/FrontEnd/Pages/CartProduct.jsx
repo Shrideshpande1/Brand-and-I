@@ -4,15 +4,22 @@ import { Box, Divider, Image } from "@chakra-ui/react";
 import Counter from "../Components/Counter";
 import { NavLink } from "react-router-dom";
 import Footer from "../Components/Footer";
+import { DeleteCart } from "../../BackEnd/Product_API";
 const CartProduct = () => {
   const [data, setData] = useState([]);
 
   const fetchCartData = () => {
     getCart().then((res) => {
-      console.log(res.data);
+      // console.log(res.data);
       setData(res.data);
     });
   };
+  
+  const handleCartdelete = () => {
+    DeleteCart().then(() => getCart(res.data));
+   
+  };
+
 
   useEffect(() => {
     fetchCartData();
@@ -47,6 +54,11 @@ const CartProduct = () => {
                 <NavLink to={"/Buy_now"}>
                   <button border={"1px solid black"}>Buy</button>
                 </NavLink>
+              </Box>
+              <Box>
+              
+                  <button onClick={()=>{ DeleteCart(ele.id).then((res) =>fetchCartData());}} border={"1px solid black"}>Delete</button>
+               
               </Box>
             </Box>
           </Box>
